@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcântara Barbearia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-gold': '#c5a47e',
+              'brand-dark': '#1a1a1a',
+              'brand-gray': '#2c2c2c',
+            },
+            fontFamily: {
+              'heading': ['Teko', 'sans-serif'],
+              'body': ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-dark text-white font-body">
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
